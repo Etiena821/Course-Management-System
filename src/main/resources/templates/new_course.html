@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Management System</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class = "container">
+    <h1>Course Management System</h1>
+    <hr>
+    <h2>Add Course</h2>
+
+    <form action = "#" th:action = "@{/saveEmployee}" th:object = "${course}" method = "POST" >
+        <label>First Name:</label>
+        <input type="text" th:field = "*{firstName}" placeholder="Employee First Name" class = "form-control mb-4 col-4">
+
+        <label>Last Name:</label>
+        <input type="text" th:field = "*{lastName}" placeholder="Employee Last Name" class = "form-control mb-4 col-4">
+
+        <label>Email Address:</label>
+        <input type="text" th:field = "*{email}" placeholder="Employee Email" class = "form-control mb-4 col-4">
+
+        <label>Age:</label>
+        <input type="text" th:field = "*{age}" placeholder="Employee age" class = "form-control mb-4 col-4">
+
+        <label>Position:</label>
+        <input type="text" th:field = "*{position}" placeholder="Employee position"  class = "form-control mb-4 col-4">
+
+        <label>Salary:</label>
+        <input type="text" th:field = "*{salary}" placeholder="Employee salary"  class = "form-control mb-4 col-4">
+
+        <label> Leave Status:</label>
+        <input type="text" th:field = "*{leaveStatus}" placeholder="Employee leave status"  class = "form-control mb-4 col-4">
+
+        <label> Leave Reason:</label>
+        <input type="text" th:field = "*{leaveReason}" placeholder="Employee leave reason"  class = "form-control mb-4 col-4">
+
+        <label> Leave Start Date:</label>
+        <input type="text" th:field = "*{leaveStartDate}" placeholder="Employee leave start date"  class = "form-control mb-4 col-4">
+
+        <label> Leave End Date:</label>
+        <input type="text" th:field = "*{leaveEndDate}" placeholder="Employee leave end date"  class = "form-control mb-4 col-4">
+
+        <label>Address:</label>
+        <input type="text" th:field = "*{address}"  placeholder="Employee address" class = "form-control mb-4 col-4">
+
+        <label>Phone Number:</label>
+        <input type="text" th:field = "*{phoneNumber}" placeholder="Employee phone Number"  class = "form-control mb-4 col-4">
+
+        <label>State of Origin:</label>
+        <input type="text" th:field = "*{stateOfOrigin}" placeholder="Employee State of Origin" class = "form-control mb-4 col-4">
+
+        <label>Marital Status:</label>
+        <input type="text" th:field = "*{maritalStatus}" placeholder="Employee Marital Status" class = "form-control mb-4 col-4">
+
+        <label>Religion:</label>
+        <input type="text" th:field = "*{religion}" placeholder="Employee Religion" class = "form-control mb-4 col-4">
+
+        <label>Qualification:</label>
+        <input type="text" th:field = "*{qualification}" placeholder="Employee Qualification" class = "form-control mb-4 col-4">
+
+        <label>Years of Experience:</label>
+        <input type="text" th:field = "*{yearsOfExperience}" placeholder="Employee Years of Experience" class = "form-control mb-4 col-4">
+
+
+
+        <button type="submit" class = "btn btn-info col-2">Add Employee</button>
+        <button align="right"><a th:href="@{/employee}" class="btn btn-info">Back to home page</a></button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
